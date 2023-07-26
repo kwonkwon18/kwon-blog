@@ -1,0 +1,18 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+        ## 페이지는 1부터 파라미터 시작하는걸로 하겠다.
+
+
+  datasource:
+    url: jdbc:h2:mem:kwonBlog
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
